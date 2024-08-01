@@ -1,0 +1,37 @@
+The financial chatbot is a rule-based AI-driven system designed to answer financial queries about specific companies (Microsoft, Tesla, and Apple) for the fiscal years 2022, 2023, and 2024. It leverages data from two CSV files: final_data_report.csv and Summary_final_report.csv. Here's a brief summary of how it works:
+
+User Interaction:
+
+The chatbot initiates a session when the user inputs "Hi".
+It prompts the user to select a company from a list of three (Microsoft, Tesla, Apple).
+The user is then asked to input a fiscal year (2022, 2023, or 2024).
+Query Handling:
+
+The chatbot asks the user to enter a query related to the selected company and fiscal year.
+It checks the user's query against a predefined set of questions:
+Total Revenue
+Net Income
+Total Assets
+Total Liabilities
+Cash Flow from Operating Activities
+Revenue Growth (%)
+Net Income Growth (%)
+Assets Growth (%)
+Liabilities Growth (%)
+Cash Flow from Operations Growth (%)
+Year-by-Year Average Revenue Growth Rate (%)
+Year-by-Year Average Net Income Growth Rate (%)
+Year-by-Year Average Assets Growth Rate (%)
+Year-by-Year Average Liabilities Growth Rate (%)
+Year-by-Year Average Cash Flow from Operations Growth Rate (%)
+Data Retrieval and Response:
+
+The chatbot retrieves relevant data from the final_data_report or summary_report DataFrames based on the user's query.
+It returns the financial information specific to the selected company and fiscal year.
+Exit Condition:
+
+The user can type "exit" to end the chatbot session at any time.
+Error Handling:
+
+If the user inputs an invalid company name or fiscal year, the chatbot prompts the user to restart the session.
+If the user inputs an unrecognized query, the chatbot returns a message indicating that it cannot provide information on the requested query.
